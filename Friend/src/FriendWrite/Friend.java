@@ -1,45 +1,43 @@
 package FriendWrite;
 
 public class Friend {
-	private int Num;
-	private String Name;
-	private String Birth;
-	private String Phone;
-	private String Addr;
+	private int num;
+	private String name;
+	private String birth;
+	private String phone;
+	private String addr;
 	
-	
+	//getter,setter
 	public int getNum() {
-		return Num;
+		return num;
 	}
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public String getBirth() {
-		return Birth;
+		return birth;
 	}
 	public String getPhone() {
-		return Phone;
+		return phone;
 	}
 	public String getAddr() {
-		return Addr;
+		return addr;
 	}
 	public void setNum(int num) {
-		Num = num;
+		this.num = num;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 	public void setBirth(String birth) {
-		Birth = birth;
+		this.birth = birth;
 	}
 	public void setPhone(String phone) {
-		Phone = phone;
+		this.phone = phone;
 	}
 	public void setAddr(String addr) {
-		Addr = addr;
+		this.addr = addr;
 	}
-	
-	
 
-
+	
 }

@@ -1,5 +1,5 @@
 package FriendWrite;
-import java.sql.Connection;
+	import java.sql.Connection;
 	import java.sql.DriverManager;
 	import java.sql.PreparedStatement;
 	import java.sql.ResultSet;
@@ -60,7 +60,7 @@ import java.sql.Connection;
 		            f.setNum(rs.getInt("num"));
 		            f.setName(rs.getString("name"));
 		            f.setBirth(rs.getString("birth"));
-		            f.setPhone(rs.getString("Phone"));
+		            f.setPhone(rs.getString("phone"));
 		            f.setAddr(rs.getString("addr"));
 		            
 		            arr.add(f);

@@ -87,7 +87,7 @@ public class FriendView extends JFrame {
    private JPanel getPanel() {
       if (panel == null) {
          panel = new JPanel();
-         panel.setBorder(new TitledBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null), "\uCE5C\uAD6C\uB4F1\uB85D", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+         panel.setBorder(new TitledBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null), "개인정보등록", TitledBorder.LEADING, TitledBorder.TOP, null, null));
          panel.setLayout(null);
          panel.add(getLb1());
          panel.add(getLb2());
@@ -171,6 +171,7 @@ public class FriendView extends JFrame {
                for(Friend f:arr) {
                   taView.append("번호 :"+f.getNum()+"\n");
                   taView.append("이름 :"+f.getName()+"\n");
+                  taView.append("주소 :"+f.getAddr()+"\n");
                   taView.append("전화번호 :"+f.getPhone()+"\n\n");
                }
             }
@@ -210,7 +211,7 @@ public class FriendView extends JFrame {
    private JScrollPane getScrollPane() {
       if (scrollPane == null) {
          scrollPane = new JScrollPane();
-         scrollPane.setBorder(new TitledBorder(null, "\uC804\uCCB4\uBCF4\uAE30", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+         scrollPane.setBorder(new TitledBorder(null, "전체보기", TitledBorder.LEADING, TitledBorder.TOP, null, null));
          scrollPane.setViewportView(getTaView());
       }
       return scrollPane;
@@ -274,7 +275,7 @@ public class FriendView extends JFrame {
                }
             }
          });
-         btnSearch.setBounds(237, 24, 57, 23);
+         btnSearch.setBounds(201, 50, 93, 23);
       }
       return btnSearch;
    }
